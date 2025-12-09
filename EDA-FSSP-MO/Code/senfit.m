@@ -1,9 +1,0 @@
-function [objt1,objt2]=senfit(x,data)
-pt1=data.pt1;
-pt2=data.pt2;
-pt3=data.pt3;
-[s11,s12]=fitness(x,data,pt1);
-[s21,s22]=fitness(x,data,pt2);
-[s31,s32]=fitness(x,data,pt3);
-objt1=(s11+s21+s31)/3;
-objt2=(s12+s22+s32)/3;
